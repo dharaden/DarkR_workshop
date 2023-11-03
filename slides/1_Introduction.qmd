@@ -1,0 +1,43 @@
+---
+title: "Introduction: An Unexpected Journey"
+subtitle: "R Workshop - Fall 2023"
+author: "Dustin Haraden, PhD"
+format: 
+  revealjs:
+    multiplex: true
+    scrollable: true
+    slide-number: true
+    incremental: false
+    touch: true
+    code-overflow: wrap
+    theme: dark
+execute: 
+  echo: true
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = F}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+# Welcome! 
+
+It is so exciting to have everyone here today. As some of you know, I am a bit of an R nerd and now I get to invite others to join the ~~cult~~ community
+
+------------------------------------------------------------------------
+
+## Today...
+
+-   Customizing R-Studio
+
+-   Getting used to the layout
+
+-   Saving work
+
+-   R-Markdown vs. Scripts vs. Console
+
+-   packages and libraries
+
+-   Getting data

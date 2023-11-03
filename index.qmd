@@ -5,3 +5,9 @@ title: "R Workshop - Fall 2023"
 Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.
 
 The hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.
+
+Feel free to reach out to the instructor at any point:
+
+Dustin Haraden, PhD
+
+email: dxhgsh\@rit.edu

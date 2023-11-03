@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R Workshop - Fall 2023",
-    "section": "",
-    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology."
+    "objectID": "slides/1_Introduction.html#today",
+    "href": "slides/1_Introduction.html#today",
+    "title": "Introduction: An Unexpected Journey",
+    "section": "Today…",
+    "text": "Today…\n\nCustomizing R-Studio\nGetting used to the layout\nSaving work\nR-Markdown vs. Scripts vs. Console\npackages and libraries\nGetting data"
   },
   {
     "objectID": "about.html",
@@ -32,6 +32,13 @@
     "href": "about.html#introduction-an-unexpected-journey",
     "title": "Materials",
     "section": "1-Introduction: An Unexpected Journey",
-    "text": "1-Introduction: An Unexpected Journey\nDuring the first session, we plan to go over becoming more comfortable with R and making it your own. Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R). This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of packages and libraries, and loading in some data.\nOnce Dustin puts together some slides, they will be linked here:"
+    "text": "1-Introduction: An Unexpected Journey\nDuring the first session, we plan to go over becoming more comfortable with R and making it your own. Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R). This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of packages and libraries, and loading in some data.\nOnce Dustin puts together some slides, they will be linked here:\n\nSlides for Session 1"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Workshop - Fall 2023",
+    "section": "",
+    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.\nFeel free to reach out to the instructor at any point:\nDustin Haraden, PhD\nemail: dxhgsh@rit.edu"
   }
 ]
