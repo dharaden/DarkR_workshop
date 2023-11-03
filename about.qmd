@@ -1,9 +1,21 @@
 ---
-title: "About"
+title: "Materials"
 ---
 
-About this site
+# Getting Started
 
-```{r}
-1 + 1
-```
+## "Syllabus"
+
+Here is a word doc that has some topics about what can be covered (link)
+
+## Installing R & R-Studio
+
+Be sure to have the latest versions of R and R-Studio installed. You can do so by navigating to the [Posit Website](https://posit.co/download/rstudio-desktop/). If you have any trouble, you can take a look at [Hands-On Programming with R](https://rstudio-education.github.io/hopr/starting.html).
+
+# Session Materials
+
+## 1-Introduction: An Unexpected Journey
+
+During the first session, we plan to go over becoming more comfortable with R and making it your own. *Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R).* This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of `packages` and `libraries`, and loading in some data.
+
+Once Dustin puts together some slides, they will be linked here:

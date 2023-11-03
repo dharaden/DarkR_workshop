@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "R_Workshop_Fall23"
+  title: "R-Workshop (Fall 2023)"
   navbar:
     left:
       - href: index.qmd
