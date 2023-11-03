@@ -6,7 +6,7 @@ title: "Materials"
 
 ## "Syllabus"
 
-Here is a word doc that has some topics about what can be covered ([link](materials/Dark R_Syllabus.docx))
+Here is a word doc that has some topics about what can be covered ([link](materials/Dark%20R_Syllabus.docx))
 
 ## Installing R & R-Studio
 
@@ -20,4 +20,5 @@ During the first session, we plan to go over becoming more comfortable with R an
 
 Once Dustin puts together some slides, they will be linked here:
 
--   [Slides for Session 1](/slides/1_Introduction-speaker.html)
+-   [Slides for Session 1](/materials/Session1_RStudio.pptx)
+-   [Data for Session 1](data/NM-NY_CAS.csv)

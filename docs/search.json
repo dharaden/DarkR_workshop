@@ -32,7 +32,7 @@
     "href": "about.html#introduction-an-unexpected-journey",
     "title": "Materials",
     "section": "1-Introduction: An Unexpected Journey",
-    "text": "1-Introduction: An Unexpected Journey\nDuring the first session, we plan to go over becoming more comfortable with R and making it your own. Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R). This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of packages and libraries, and loading in some data.\nOnce Dustin puts together some slides, they will be linked here:\n\nSlides for Session 1"
+    "text": "1-Introduction: An Unexpected Journey\nDuring the first session, we plan to go over becoming more comfortable with R and making it your own. Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R). This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of packages and libraries, and loading in some data.\nOnce Dustin puts together some slides, they will be linked here:\n\nSlides for Session 1\nData for Session 1"
   },
   {
     "objectID": "index.html",
