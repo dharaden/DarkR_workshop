@@ -22,3 +22,13 @@ Once Dustin puts together some slides, they will be linked here:
 
 -   [Slides for Session 1](/materials/Session1_RStudio.pptx)
 -   [Data for Session 1](data/NM-NY_CAS.csv)
+
+## 2-Data Wrangling: And you have my bow!
+
+Our second session will focus on what we do with the data once we have it in the R environment. We will revisit how to bring data into the environment and then begin to talk about descriptives and cleaning. In addition, we will be working to create subscales since that is most of what our research tends to look at. Hopefully, we will be able to make some nice & pretty tables
+
+Once the slides are done, they will go in these empty bullet points:
+
+-   
+
+-   
