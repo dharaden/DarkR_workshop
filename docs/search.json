@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "slides/1_Introduction.html#today",
-    "href": "slides/1_Introduction.html#today",
-    "title": "Introduction: An Unexpected Journey",
+    "objectID": "slides/2_DataWrangling.html#today",
+    "href": "slides/2_DataWrangling.html#today",
+    "title": "Data Wrangling:",
     "section": "Today…",
-    "text": "Today…\n\nCustomizing R-Studio\nGetting used to the layout\nSaving work\nR-Markdown vs. Scripts vs. Console\npackages and libraries\nGetting data"
+    "text": "Today…\n\nData Management\n\nCreating new variables\nTransforming Variables\nSelecting, subsetting and joining\n\nVisualizing? Maybe…\nChecking in about how to proceed!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Workshop - Fall 2023",
+    "section": "",
+    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.\nFeel free to reach out to the instructor at any point:\nDustin Haraden, PhD\nemail: dxhgsh@rit.edu"
   },
   {
     "objectID": "about.html",
@@ -35,10 +42,17 @@
     "text": "1-Introduction: An Unexpected Journey\nDuring the first session, we plan to go over becoming more comfortable with R and making it your own. Note: When I refer to using R, I am really referring to using R-Studio (the GUI for R). This includes updating some of the default settings in R that will save your environment and all of your data. Having this enabled makes it difficult to practice reproducible coding. Additional steps will include setting up a project, getting familiar with the usage of packages and libraries, and loading in some data.\nOnce Dustin puts together some slides, they will be linked here:\n\nSlides for Session 1\nData for Session 1"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R Workshop - Fall 2023",
-    "section": "",
-    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.\nFeel free to reach out to the instructor at any point:\nDustin Haraden, PhD\nemail: dxhgsh@rit.edu"
+    "objectID": "about.html#data-wrangling-and-you-have-my-bow",
+    "href": "about.html#data-wrangling-and-you-have-my-bow",
+    "title": "Materials",
+    "section": "2-Data Wrangling: And you have my bow!",
+    "text": "2-Data Wrangling: And you have my bow!\nOur second session will focus on what we do with the data once we have it in the R environment. We will revisit how to bring data into the environment and then begin to talk about descriptives and cleaning. In addition, we will be working to create subscales since that is most of what our research tends to look at. Hopefully, we will be able to make some nice & pretty tables\nOnce the slides are done, they will go in these empty bullet points:"
+  },
+  {
+    "objectID": "slides/1_Introduction.html#today",
+    "href": "slides/1_Introduction.html#today",
+    "title": "Introduction: An Unexpected Journey",
+    "section": "Today…",
+    "text": "Today…\n\nCustomizing R-Studio\nGetting used to the layout\nSaving work\nR-Markdown vs. Scripts vs. Console\npackages and libraries\nGetting data"
   }
 ]
