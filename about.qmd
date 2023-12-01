@@ -29,6 +29,6 @@ Our second session will focus on what we do with the data once we have it in the
 
 Once the slides are done, they will go in these empty bullet points:
 
--   
+-   [Slides for Session 2](/materials/2_DataWrangling-speaker)
 
 -   
