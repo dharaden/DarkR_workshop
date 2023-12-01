@@ -62,7 +62,13 @@ You can copy this code below and put it into your work
 
 Following this tutorial: <https://shinyapps.bren.ucsb.edu/envs40workshop/>
 
-# Other Topics
+## datawizard
+
+https://easystats.github.io/datawizard/
+
+Using `row_means()` to create subscales
+
+# Other Topics?
 
 t-tests
 
