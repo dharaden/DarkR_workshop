@@ -60,6 +60,14 @@ NOTE: Make sure that you have opened up the Project
 
 You can copy this code below and put it into your work
 
+```{r}
+library(rio)
+gad <- import("https://github.com/dharaden/DarkR_workshop/blob/main/data/gad.csv", na = "NA")
+
+phq <- import("https://raw.githubusercontent.com/dharaden/DarkR_workshop/main/data/phq.csv", na = "NA")
+
+```
+
 Following this tutorial: <https://shinyapps.bren.ucsb.edu/envs40workshop/>
 
 ## datawizard

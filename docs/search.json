@@ -4,7 +4,35 @@
     "href": "slides/2_DataWrangling.html#today",
     "title": "Data Wrangling:",
     "section": "Today…",
-    "text": "Today…\n\nData Management\n\nCreating new variables\nTransforming Variables\nSelecting, subsetting and joining\n\nVisualizing? Maybe…\nChecking in about how to proceed!"
+    "text": "Today…\n\nIllustration from @allison_horst"
+  },
+  {
+    "objectID": "slides/2_DataWrangling.html#today-1",
+    "href": "slides/2_DataWrangling.html#today-1",
+    "title": "Data Wrangling:",
+    "section": "Today…",
+    "text": "Today…\n\nData Management/Wrangling\n\nCreating new variables\nTransforming Variables\nSelecting, subsetting and joining\n\nVisualizing? Maybe…\nChecking in about how to proceed!"
+  },
+  {
+    "objectID": "slides/2_DataWrangling.html#getting-started",
+    "href": "slides/2_DataWrangling.html#getting-started",
+    "title": "Data Wrangling:",
+    "section": "Getting Started",
+    "text": "Getting Started\nLet’s start by opening up a new RMarkdown Document\nNOTE: Make sure that you have opened up the Project\nhttps://allisonhorst.com/r-packages-functions"
+  },
+  {
+    "objectID": "slides/2_DataWrangling.html#getting-the-data",
+    "href": "slides/2_DataWrangling.html#getting-the-data",
+    "title": "Data Wrangling:",
+    "section": "Getting the Data",
+    "text": "Getting the Data\nYou can copy this code below and put it into your work\n\nlibrary(rio)\ngad &lt;- import(\"https://github.com/dharaden/DarkR_workshop/blob/main/data/gad.csv\", na = \"NA\")\n\nphq &lt;- import(\"https://raw.githubusercontent.com/dharaden/DarkR_workshop/main/data/phq.csv\", na = \"NA\")\n\nFollowing this tutorial: https://shinyapps.bren.ucsb.edu/envs40workshop/"
+  },
+  {
+    "objectID": "slides/2_DataWrangling.html#datawizard",
+    "href": "slides/2_DataWrangling.html#datawizard",
+    "title": "Data Wrangling:",
+    "section": "datawizard",
+    "text": "datawizard\nhttps://easystats.github.io/datawizard/\nUsing row_means() to create subscales"
   },
   {
     "objectID": "index.html",
