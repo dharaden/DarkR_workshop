@@ -30,7 +30,11 @@ It is so exciting to have everyone here today. As some of you know, I am a bit o
 
 ## Today...
 
--   Data Management
+[![Illustration from \@allison_horst](/images/data_wrangler.png){fig-align="center"}](https://twitter.com/allison_horst)
+
+## Today...
+
+-   Data Management/Wrangling
 
     -   Creating new variables
 
@@ -41,6 +45,22 @@ It is so exciting to have everyone here today. As some of you know, I am a bit o
 -   Visualizing? Maybe...
 
 -   Checking in about how to proceed!
+
+------------------------------------------------------------------------
+
+## Getting Started
+
+Let's start by opening up a new RMarkdown Document
+
+NOTE: Make sure that you have opened up the Project
+
+<https://allisonhorst.com/r-packages-functions>
+
+## Getting the Data
+
+You can copy this code below and put it into your work
+
+Following this tutorial: <https://shinyapps.bren.ucsb.edu/envs40workshop/>
 
 # Other Topics
 
