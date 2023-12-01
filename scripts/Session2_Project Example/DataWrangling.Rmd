@@ -1,0 +1,53 @@
+---
+output:
+  html_document: default
+  word_document: default
+---
+```{r message=FALSE, warning=FALSE}
+library(here)
+library(rio)
+library(tidyverse)
+library(datawizard)
+library(psych)
+library(sjPlot)
+
+
+gad_data <- import(here("Data", "gad.csv"),
+                   na = "NA")
+phq_data <- import(here("Data", "phq.csv"),
+                   na = "NA")
+
+```
+
+Merge files together
+```{r}
+full_data <- full_join(gad_data, phq_data, 
+                       by = "ID") %>% 
+  select(-c(V1.x, V1.y)) %>% 
+  mutate(gad_mean = row_means(.,select = c(GAD1:GAD7), 
+                              min_valid = 5),
+         phq_mean = row_means(.,select = c(PHQ1:PHQ9), 
+                              min_valid = 7))
+
+```
+
+Look into rowMeans() to see what it accomplishes
+
+Descriptive Statistics 
+```{r}
+describe(full_data)
+
+full_data %>% 
+  select(GAD1:GAD7) %>% 
+  describe()
+```
+
+Correlation Table
+https://strengejacke.github.io/sjPlot/reference/tab_corr.html 
+```{r}
+
+full_data %>% 
+  select(contains("phq")) %>% 
+tab_corr(triangle = "lower")
+```
+

@@ -2,44 +2,44 @@
   {
     "objectID": "slides/2_DataWrangling.html#today",
     "href": "slides/2_DataWrangling.html#today",
-    "title": "Data Wrangling:",
+    "title": "Data Wrangling: You Have My Bow",
     "section": "Today…",
     "text": "Today…\n\nIllustration from @allison_horst"
   },
   {
     "objectID": "slides/2_DataWrangling.html#today-1",
     "href": "slides/2_DataWrangling.html#today-1",
-    "title": "Data Wrangling:",
+    "title": "Data Wrangling: You Have My Bow",
     "section": "Today…",
     "text": "Today…\n\nData Management/Wrangling\n\nCreating new variables\nTransforming Variables\nSelecting, subsetting and joining\n\nVisualizing? Maybe…\nChecking in about how to proceed!"
   },
   {
     "objectID": "slides/2_DataWrangling.html#getting-started",
     "href": "slides/2_DataWrangling.html#getting-started",
-    "title": "Data Wrangling:",
+    "title": "Data Wrangling: You Have My Bow",
     "section": "Getting Started",
     "text": "Getting Started\nLet’s start by opening up a new RMarkdown Document\nNOTE: Make sure that you have opened up the Project\nhttps://allisonhorst.com/r-packages-functions"
   },
   {
     "objectID": "slides/2_DataWrangling.html#getting-the-data",
     "href": "slides/2_DataWrangling.html#getting-the-data",
-    "title": "Data Wrangling:",
+    "title": "Data Wrangling: You Have My Bow",
     "section": "Getting the Data",
     "text": "Getting the Data\nYou can copy this code below and put it into your work\n\nlibrary(rio)\ngad &lt;- import(\"https://github.com/dharaden/DarkR_workshop/blob/main/data/gad.csv\", na = \"NA\")\n\nphq &lt;- import(\"https://raw.githubusercontent.com/dharaden/DarkR_workshop/main/data/phq.csv\", na = \"NA\")\n\nFollowing this tutorial: https://shinyapps.bren.ucsb.edu/envs40workshop/"
   },
   {
     "objectID": "slides/2_DataWrangling.html#datawizard",
     "href": "slides/2_DataWrangling.html#datawizard",
-    "title": "Data Wrangling:",
+    "title": "Data Wrangling: You Have My Bow",
     "section": "datawizard",
     "text": "datawizard\nhttps://easystats.github.io/datawizard/\nUsing row_means() to create subscales"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R Workshop - Fall 2023",
+    "objectID": "scripts/Session2_Project Example/DataWrangling.html",
+    "href": "scripts/Session2_Project Example/DataWrangling.html",
+    "title": "R-Workshop (Fall 2023)",
     "section": "",
-    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.\nFeel free to reach out to the instructor at any point:\nDustin Haraden, PhD\nemail: dxhgsh@rit.edu"
+    "text": "library(here)\nlibrary(rio)\nlibrary(tidyverse)\nlibrary(datawizard)\nlibrary(psych)\nlibrary(sjPlot)\n\n\ngad_data &lt;- import(here(\"Data\", \"gad.csv\"),\n                   na = \"NA\")\nphq_data &lt;- import(here(\"Data\", \"phq.csv\"),\n                   na = \"NA\")\n\nMerge files together\n\nfull_data &lt;- full_join(gad_data, phq_data, \n                       by = \"ID\") %&gt;% \n  select(-c(V1.x, V1.y)) %&gt;% \n  mutate(gad_mean = row_means(.,select = c(GAD1:GAD7), \n                              min_valid = 5),\n         phq_mean = row_means(.,select = c(PHQ1:PHQ9), \n                              min_valid = 7))\n\nLook into rowMeans() to see what it accomplishes\nDescriptive Statistics\n\ndescribe(full_data)\n\n         vars   n   mean    sd median trimmed   mad min    max  range skew\nID          1 200 100.50 57.88 100.50  100.50 74.13   1 200.00 199.00 0.00\nGAD1        2 188   0.19  0.62   0.00    0.01  0.00   0   3.00   3.00 3.56\nGAD2        3 191   0.39  0.89   0.00    0.16  0.00   0   3.00   3.00 2.08\nGAD3        4 196   0.37  0.90   0.00    0.12  0.00   0   3.00   3.00 2.23\nGAD4        5 187   0.29  0.77   0.00    0.07  0.00   0   3.00   3.00 2.55\nGAD5        6 195   0.32  0.83   0.00    0.08  0.00   0   3.00   3.00 2.50\nGAD6        7 184   0.26  0.73   0.00    0.04  0.00   0   3.00   3.00 2.87\nGAD7        8 189   0.29  0.73   0.00    0.09  0.00   0   3.00   3.00 2.57\nPHQ1        9 190   0.34  0.83   0.00    0.11  0.00   0   3.00   3.00 2.28\nPHQ2       10 189   0.35  0.82   0.00    0.14  0.00   0   3.00   3.00 2.16\nPHQ3       11 188   0.29  0.74   0.00    0.08  0.00   0   3.00   3.00 2.48\nPHQ4       12 187   0.30  0.76   0.00    0.09  0.00   0   3.00   3.00 2.49\nPHQ5       13 184   0.35  0.85   0.00    0.11  0.00   0   3.00   3.00 2.32\nPHQ6       14 193   0.41  0.89   0.00    0.17  0.00   0   3.00   3.00 2.05\nPHQ7       15 189   0.25  0.72   0.00    0.04  0.00   0   3.00   3.00 2.71\nPHQ8       16 193   0.26  0.75   0.00    0.03  0.00   0   3.00   3.00 2.72\nPHQ9       17 194   0.37  0.88   0.00    0.12  0.00   0   3.00   3.00 2.22\ngad_mean   18 199   0.30  0.32   0.29    0.26  0.42   0   1.57   1.57 1.20\nphq_mean   19 197   0.33  0.29   0.33    0.30  0.33   0   1.12   1.12 0.68\n         kurtosis   se\nID          -1.22 4.09\nGAD1        12.00 0.05\nGAD2         2.85 0.06\nGAD3         3.41 0.06\nGAD4         5.16 0.06\nGAD5         4.89 0.06\nGAD6         7.10 0.05\nGAD7         5.76 0.05\nPHQ1         3.82 0.06\nPHQ2         3.29 0.06\nPHQ3         4.94 0.05\nPHQ4         5.13 0.06\nPHQ5         3.97 0.06\nPHQ6         2.80 0.06\nPHQ7         6.07 0.05\nPHQ8         6.09 0.05\nPHQ9         3.37 0.06\ngad_mean     1.64 0.02\nphq_mean    -0.27 0.02\n\nfull_data %&gt;% \n  select(GAD1:GAD7) %&gt;% \n  describe()\n\n     vars   n mean   sd median trimmed mad min max range skew kurtosis   se\nGAD1    1 188 0.19 0.62      0    0.01   0   0   3     3 3.56    12.00 0.05\nGAD2    2 191 0.39 0.89      0    0.16   0   0   3     3 2.08     2.85 0.06\nGAD3    3 196 0.37 0.90      0    0.12   0   0   3     3 2.23     3.41 0.06\nGAD4    4 187 0.29 0.77      0    0.07   0   0   3     3 2.55     5.16 0.06\nGAD5    5 195 0.32 0.83      0    0.08   0   0   3     3 2.50     4.89 0.06\nGAD6    6 184 0.26 0.73      0    0.04   0   0   3     3 2.87     7.10 0.05\nGAD7    7 189 0.29 0.73      0    0.09   0   0   3     3 2.57     5.76 0.05\n\n\nCorrelation Table https://strengejacke.github.io/sjPlot/reference/tab_corr.html\n\nfull_data %&gt;% \n  select(contains(\"phq\")) %&gt;% \ntab_corr(triangle = \"lower\")\n\n\n\n\n \nPHQ1\nPHQ2\nPHQ3\nPHQ4\nPHQ5\nPHQ6\nPHQ7\nPHQ8\nPHQ9\nphq_mean\n\n\nPHQ1\n \n \n \n \n \n \n \n \n \n \n\n\nPHQ2\n-0.057\n \n \n \n \n \n \n \n \n \n\n\nPHQ3\n0.075\n0.042\n \n \n \n \n \n \n \n \n\n\nPHQ4\n-0.063\n0.246**\n-0.053\n \n \n \n \n \n \n \n\n\nPHQ5\n-0.038\n-0.099\n-0.041\n0.078\n \n \n \n \n \n \n\n\nPHQ6\n-0.098\n0.102\n0.026\n0.090\n0.068\n \n \n \n \n \n\n\nPHQ7\n0.025\n-0.164\n-0.006\n0.058\n0.036\n-0.117\n \n \n \n \n\n\nPHQ8\n0.167\n-0.077\n0.045\n0.097\n0.040\n-0.042\n0.061\n \n \n \n\n\nPHQ9\n-0.064\n-0.084\n0.051\n0.049\n-0.019\n-0.043\n0.030\n0.040\n \n \n\n\nphq_mean\n0.316***\n0.312***\n0.379***\n0.461***\n0.315***\n0.332***\n0.263**\n0.383***\n0.346***\n \n\n\nComputed correlation used pearson-method with listwise-deletion."
   },
   {
     "objectID": "about.html",
@@ -75,6 +75,13 @@
     "title": "Materials",
     "section": "2-Data Wrangling: And you have my bow!",
     "text": "2-Data Wrangling: And you have my bow!\nOur second session will focus on what we do with the data once we have it in the R environment. We will revisit how to bring data into the environment and then begin to talk about descriptives and cleaning. In addition, we will be working to create subscales since that is most of what our research tends to look at. Hopefully, we will be able to make some nice & pretty tables\nOnce the slides are done, they will go in these empty bullet points:\n\nSlides for Session 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Workshop - Fall 2023",
+    "section": "",
+    "text": "Thanks for stopping by! This is a website that is designed to hold the files for a workshop that Dustin Haraden is putting together at Rochester Institute of Technology starting in Fall 2023.\nThe hope is that this will include everything for folks who want to start learning R who are in the social sciences, specifically Psychology.\nFeel free to reach out to the instructor at any point:\nDustin Haraden, PhD\nemail: dxhgsh@rit.edu"
   },
   {
     "objectID": "slides/1_Introduction.html#today",

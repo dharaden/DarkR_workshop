@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling: "
+title: "Data Wrangling: You Have My Bow"
 subtitle: "R Workshop - Fall 2023"
 author: "Dustin Haraden, PhD"
 format: 
